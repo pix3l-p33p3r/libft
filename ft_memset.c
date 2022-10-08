@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 16:18:17 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:19:42 by elel-yak         ###   ########.fr       */
+/*   Created: 2022/10/08 15:12:49 by elel-yak          #+#    #+#             */
+/*   Updated: 2022/10/08 16:52:46 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = c;
+		((unsigned char *)s)[i] = (unsigned char)c;
 		i++;
 	}
 	return (s);
