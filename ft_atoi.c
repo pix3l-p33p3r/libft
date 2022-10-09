@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:06 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 20:15:39 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 17:23:17 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,10 @@ int	ft_atoi(char *str)
 	}
 	return (ich * res);
 }
+int main ()
+{
+	char c[] = "+-1335";
+	printf("%d", atoi(c));
+	printf("\n%d", ft_atoi(c));
+}
+
