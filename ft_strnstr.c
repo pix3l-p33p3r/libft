@@ -6,7 +6,13 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:13:10 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:47:48 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 12:53:57 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	
+}

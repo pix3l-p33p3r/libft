@@ -6,7 +6,13 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:13:12 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:56:25 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 13:01:41 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	*ft_strrchr(const char *s, int c)
+{
+	
+}

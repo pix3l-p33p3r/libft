@@ -6,11 +6,11 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:13:07 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 22:38:03 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 12:44:43 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

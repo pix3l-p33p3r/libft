@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:13:21 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 22:41:52 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 09:42:21 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <stdio.h>
+# include <ctype.h>
 
 /* Part 1 functions */
 int		ft_isalpha(int c);

@@ -6,7 +6,12 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:43 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:47:20 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 12:50:20 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	
+}
