@@ -6,13 +6,13 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:31 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:47:08 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/11 10:08:02 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c >= 126);
 }
