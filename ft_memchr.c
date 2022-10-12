@@ -6,7 +6,22 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:38 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:47:17 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/12 09:57:02 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	*ft_memchr(const void *s, int c, size_t n)
+{
+	char	*x;
+
+	x = (char *)s;
+	while (n--)
+	{
+		if (*x == (char)c)
+			return ((void *)x);
+		x++;
+	}
+	return (0);
+}
