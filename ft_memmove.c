@@ -6,13 +6,13 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:46 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/12 09:58:21 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/12 10:10:03 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	*d;
 	char	*s;
