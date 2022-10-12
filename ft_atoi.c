@@ -6,13 +6,13 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:06 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/11 10:07:10 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/09 17:21:44 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	ich;
@@ -36,10 +36,3 @@ int	ft_atoi(char *str)
 	}
 	return (ich * res);
 }
-int main ()
-{
-	char c[] = "+-1335";
-	printf("%d", atoi(c));
-	printf("\n%d", ft_atoi(c));
-}
-

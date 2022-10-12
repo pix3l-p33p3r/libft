@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:40 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/12 09:55:23 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/12 10:39:50 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*x;
-	char	*z;
+	unsigned char	*x;
+	unsigned char	*z;
 
-	x = (char *)s1;
-	z = (char *)s2;
+	x = (unsigned char *)s1;
+	z = (unsigned char *)s2;
 	while (n--)
 	{
 		if (*x != *z)

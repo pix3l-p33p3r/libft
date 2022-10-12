@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:55 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/09 09:25:35 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/12 15:01:02 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ char	*ft_strdup(const char *s1)
 	s2 = malloc(ft_strlen(s1) + 1);
 	if (!s2)
 		return (0);
-	ft_strlcpy(s2, s1, ft_strlen(s1));
+	ft_strlcpy(s2, s1, ft_strlen(s1) + 1);
 	return (s2);
 }
