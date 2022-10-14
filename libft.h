@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:13:21 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/12 14:01:43 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/14 17:21:03 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdlib.h>
-# include <string.h>
 # include <stdio.h>
+# include <string.h>
+# include <stddef.h>
+# include <stdlib.h>
 
 /* Part 1 functions */
 int		ft_isalpha(int c);

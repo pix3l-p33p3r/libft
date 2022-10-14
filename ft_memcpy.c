@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:43 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/12 19:42:59 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/14 14:41:19 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	printf ("res--> {%s}\n", s);
 	return (0);
 }*/
+// src = NULL
+// dst[10]; memcpy(dest, src, 7)
+//dest = zeb
+//(unsigned char)str[i]
+// memcpy(dest, src, 10)
+// char *src = "12345";
+// dest = src + 2 ==> 345
+// src = "12121" ==> "12123"
+// memcpy(src + 2, src, 7); ==> ????12345/0/0
+// printf("src");
+//12123
