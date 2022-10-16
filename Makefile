@@ -6,7 +6,7 @@
 #    By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 17:20:09 by elel-yak          #+#    #+#              #
-#    Updated: 2022/10/14 17:23:47 by elel-yak         ###   ########.fr        #
+#    Updated: 2022/10/16 16:32:49 by elel-yak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ SRCS    = ft_atoi.c \
 	ft_strncmp.c \
 	ft_tolower.c \
 	ft_toupper.c \
-	# ft_strnstr.c \
+	ft_strnstr.c \
 	# ft_strrchr.c \
 	# ft_putchar_fd.c \
 	# ft_putendl_fd.c \
