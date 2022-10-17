@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 15:12:51 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/16 20:03:52 by elel-yak         ###   ########.fr       */
+/*   Created: 2022/10/16 20:13:45 by elel-yak          #+#    #+#             */
+/*   Updated: 2022/10/17 11:23:39 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if ((char)c == '\0')
-		return ((char *)s + ft_strlen(s));
 	while (*s)
-	{
-		if (*s == (char)c)
-			return ((char *) s);
-		s++;
-	}
-	return (0);
+		write(fd, s++, 1);
 }
+
+// int main()
+// {
+// 	int fd;
+// 	char s[9] = "zbi kbir";
+
+// 	fd = open("TEST", O_CREAT | O_RDWR, 0666);
+// 	ft_putstr_fd(s, fd);
+// 	printf("%d\n", fd);
+// 	close(fd);
+// }
