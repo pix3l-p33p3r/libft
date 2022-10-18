@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:58 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/12 14:19:20 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/18 14:36:33 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (d + s);
 }
+
+// int main()
+// {
+// 	// strlcat(0, "hello", 0);
+// 	ft_strlcat(0, "hello", 0);
+// }
