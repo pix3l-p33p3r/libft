@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:46 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/13 22:33:17 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/18 18:41:06 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(d, s, n);
 	return (dest);
 }
-// char *src = "12345";
-// dest = src + 2 ==> 345
-// src = "12121" ==> "12123"
-//memmove(src + 2, src, 3);

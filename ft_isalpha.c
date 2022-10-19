@@ -6,11 +6,14 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:23 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:58:06 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:36:56 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	c = (unsigned char)c;
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
 }

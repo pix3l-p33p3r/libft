@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 20:14:23 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/17 11:33:41 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/18 18:41:24 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-
-// int main()
-// {
-// 	int fd;
-// 	int z = -2147483648;
-// 	ft_putnbr_fd(z, fd);
-// 	fd = open("TEST", O_CREAT | O_RDWR, 0666);
-// 	printf("\n%d\n", fd);
-// 	close(fd);
-// }

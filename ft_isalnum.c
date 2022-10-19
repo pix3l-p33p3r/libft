@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:20 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/08 16:46:55 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:36:08 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isdigit(c) || ft_isalpha(c));
+	c = (unsigned char)c;
+	if (ft_isdigit(c) || ft_isalpha(c))
+		return (1);
+	return (0);
 }

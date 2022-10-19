@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:34:12 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/17 17:30:37 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:47:44 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,17 @@ static char	*ft_wordcpy(char const *src, int n)
 	return (dest);
 }
 
+static char	**ft_free(char **str, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+		free(str[i++]);
+	free(str);
+	return (0);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**t;
@@ -75,7 +86,7 @@ char	**ft_split(char const *s, char c)
 		if (*s)
 			t[i] = ft_wordcpy(s, n);
 		if (!t[i])
-			return (0);
+			return (ft_free(t, i));
 		s += n;
 	}
 	t[size] = 0;
