@@ -22,14 +22,14 @@ void	ft_putchar_fd(char c, int fd)
 // 	int fd;
 
 // 	fd = open("TEST", O_CREAT | O_RDWR, 0666);
-// 	ft_putchar_fd('z', fd);
-// 	ft_putchar_fd('b', fd);
-// 	ft_putchar_fd('i', fd);
+// 	ft_putchar_fd('h', fd);
+// 	ft_putchar_fd('e', fd);
+// 	ft_putchar_fd('l', fd);
+// 	ft_putchar_fd('l', fd);
+// 	ft_putchar_fd('o', fd);
 // 	ft_putchar_fd(' ', fd);
-// 	ft_putchar_fd('k', fd);
-// 	ft_putchar_fd('b', fd);
-// 	ft_putchar_fd('i', fd);
-// 	ft_putchar_fd('r', fd);
+// 	ft_putchar_fd('4', fd);
+// 	ft_putchar_fd('2', fd);
 // 	printf("%d\n", fd);
 // 	close(fd);
 // }
