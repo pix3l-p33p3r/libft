@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:46 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/18 18:41:06 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/22 14:40:00 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*d;
-	unsigned char	*s;
+	char	*d;
+	char	*s;
 
-	d = (unsigned char *)dest;
-	s = (unsigned char *)src;
+	d = (char *)dest;
+	s = (char *)src;
 	if (d > s)
 	{
 		while (n--)

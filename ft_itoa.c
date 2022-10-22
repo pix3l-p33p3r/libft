@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 21:42:38 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/21 15:38:49 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/21 18:13:50 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,7 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-int main()
+// int main()
+// {
+// 	printf("%s\n", ft_itoa(0000000001));
+// }

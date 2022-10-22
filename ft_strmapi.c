@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 20:54:18 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/20 13:35:26 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/22 13:23:12 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 
-char	strrrr(unsigned int i, char c)
-{
-	return(c + 'a' - '0');
-}
+// char	f(unsigned int i, char c)
+// {
+// 	return(c + 'a' - '0');
+// }
 
-int main()
-{
-	char str[] = "0123456789";
-	printf("%s\n", ft_strmapi(str, &strrrr));
-}
+// int main()
+// {
+// 	char str[] = "0123456789";
+// 	printf("%s\n", ft_strmapi(str, &f));
+// }
