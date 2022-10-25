@@ -6,13 +6,13 @@
 #    By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 17:20:09 by elel-yak          #+#    #+#              #
-#    Updated: 2022/10/17 11:35:46 by elel-yak         ###   ########.fr        #
+#    Updated: 2022/10/25 19:57:44 by elel-yak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 # 	* command to compile our functions
-CFLAGS	= -Wall -Werror -Wextra
+CFLAGS	= -Wall -Werror -Wextra 
 CC	= cc
 # 	* functions that must be compiled through our makefile
 SRCS    = ft_atoi.c \
@@ -42,13 +42,13 @@ SRCS    = ft_atoi.c \
 	ft_putstr_fd.c \
 	ft_putnbr_fd.c \
 	ft_putendl_fd.c \
-	# ft_split.c \
-	# ft_itoa.c \
-	# ft_striteri.c \
-	# ft_strjoin.c \
-	# ft_strmapi.c \
-	# ft_substr.c \
-	# ft_strtrim.c \
+	ft_split.c \
+	ft_itoa.c \
+	ft_striteri.c \
+	ft_strjoin.c \
+	ft_strmapi.c \
+	ft_substr.c \
+	ft_strtrim.c \
 
 # 	* create our executable file
 # 	* replace all files with .c extension to .o extension

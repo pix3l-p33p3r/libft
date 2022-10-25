@@ -6,11 +6,16 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 18:16:25 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/22 22:42:00 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:48:41 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
+// void func(char * const str)
+// {
+// 	str++;
+// }
 
 int main(void)
 {
@@ -43,8 +48,12 @@ int main(void)
 	// char z[] = "dd";
 	// char s[] = "hello 42";
 	// printf("%zu\n", ft_strlcat(z, s, 5));
-	char z[] = "abcdef";
-	char s[] = "abcdef";
-	char *ret = ft_strjoin(z, s);
-	printf("%s\n", ret);
+	// char z[] = "abcdef";
+	// char s[] = "abcdef";
+	// char *ret = ft_strjoin(z, s);
+	// printf("%s\n", ret);
+	char str[] = "oussama";
+	func(str);
+	printf("%s", str);
+	return (0); 
 }

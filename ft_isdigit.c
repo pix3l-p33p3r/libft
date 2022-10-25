@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:28 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/19 19:48:56 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:03:47 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isdigit(int c)
 {
-	c = (unsigned char)c;
+	// c = (unsigned char)c;
 	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
