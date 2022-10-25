@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 18:42:52 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/25 20:42:32 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/25 20:48:55 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ t_list	*ft_lstnew(void *content)
 	return (lst);
 }
 
-int main()
-{
-    t_list *ptr;
+// int main()
+// {
+//     t_list *ptr;
 
-    ptr = ft_lstnew('E');
-    printf("%c", ptr->content);
-}
+//     ptr = ft_lstnew('E');
+//     printf("%c", ptr->content);
+// }
