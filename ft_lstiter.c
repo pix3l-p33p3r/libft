@@ -1,39 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 15:12:06 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/25 20:36:46 by elel-yak         ###   ########.fr       */
+/*   Created: 2022/10/10 21:29:29 by elel-yak          #+#    #+#             */
+/*   Updated: 2022/10/25 20:42:55 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	i;
-	int	ich;
-	int	res;
-
-	i = 0;
-	ich = 1;
-	res = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
-		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (!f)
+		return ;
+	while (lst)
 	{
-		if (str[i] == '-')
-			ich = -ich;
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		res = res * 10 + str[i] - 48;
-		i++;
-	}
-	return (ich * res);
 }
-
