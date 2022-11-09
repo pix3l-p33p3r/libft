@@ -6,7 +6,7 @@
 #    By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 17:20:09 by elel-yak          #+#    #+#              #
-#    Updated: 2022/10/25 19:57:44 by elel-yak         ###   ########.fr        #
+#    Updated: 2022/10/26 10:21:01 by elel-yak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,25 +48,37 @@ SRCS    = ft_atoi.c \
 	ft_strjoin.c \
 	ft_strmapi.c \
 	ft_substr.c \
-	ft_strtrim.c \
+	ft_strtrim.c 
+BNS = 	ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 
 # 	* create our executable file
 # 	* replace all files with .c extension to .o extension
-OBJS 	= $(SRCS:%.c=%.o)
+OBJS 	= $(SRCS:.c=.o)
+BNS_OBJS = $(BNS:.c=.o)
 
 # 	* "rules" for our makefile to run
 all:	$(NAME)
 
-$(NAME):	$(OBJS)
+$(NAME): $(OBJS)
+	ar -rc $(NAME) $(OBJS) 
+
+bonus: all $(BNS_OBJS)
+	ar -rc $(NAME) $(OBJS) $(BNS_OBJS)
 # 	* ar ~create our file
 # 	* -r ~"read" adds or modifies an already created file
 # 	* -c ~suppress air message in terminal
-#	* -s ~"refresh explorer"
-	ar -rcs $(NAME) $(OBJS)
 
 # 	* forcibly delete all .o files created by our makefile
 clean:
-	rm -rf $(OBJS)
+	rm -f $(OBJS) $(BNS_OBJS)
 
 # 	* force delete all created .o files and created .a file
 fclean: clean
@@ -74,8 +86,3 @@ fclean: clean
 
 # 	* force delete all created .o files and created .a file and then recompile my files
 re:	fclean all
-
-# 	* prevent our program from crashing if there is any folder or \
-file with the name of one of our "rules"
-.PHONY:	all clean fclean re
-

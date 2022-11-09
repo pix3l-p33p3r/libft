@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:34:12 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/19 19:47:44 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:09:44 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,13 @@ static char	**ft_free(char **str, size_t n)
 
 	i = 0;
 	while (i < n)
-		free(str[i++]);
+	{
+		free(str[i]);
+		str[i] = NULL;
+		i++;
+	}
 	free(str);
+	str = NULL;
 	return (0);
 }
 

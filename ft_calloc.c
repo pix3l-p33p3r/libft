@@ -6,7 +6,7 @@
 /*   By: elel-yak <elel-yak@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:12:17 by elel-yak          #+#    #+#             */
-/*   Updated: 2022/10/18 18:40:50 by elel-yak         ###   ########.fr       */
+/*   Updated: 2022/10/26 10:27:23 by elel-yak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 
-	if (size && count >= (size_t) - 1 / size)
+	if (size && count > (SIZE_MAX) / size)
 		return (0);
 	p = malloc (size * count);
 	if (p == 0)
