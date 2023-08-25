@@ -18,7 +18,7 @@
 <img src=https://github.com/Pix31P33p3r/libft/blob/main/libft_grade.png alt=cado-car's 42Project Score/>
 <h4>Completed + Bonus</h4>
 <img src=https://github.com/Pix31P33p3r/libft/blob/main/libftm.png alt=cado-car's 42Project Badge/>
-<h4>RTFM
+<h4>RTFM</h4>
 <img src=https://github.com/Pix31P33p3r/libft/blob/main/rtfm.png alt=cado-car's RTFM/>
 </div>
 
