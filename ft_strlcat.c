@@ -39,8 +39,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 // int main(void)
 // {
-// 	char src[] = "khiar";
-// 	char dst[] = "Oussama ";
+// 	char src[] = "";
+// 	char dst[] = " O ";
 // 	int x = ft_strlcat(dst, src, 14);
 // 	printf("%s\n%d", dst, x);
 // 	return (0);
